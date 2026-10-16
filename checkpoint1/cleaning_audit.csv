@@ -1,0 +1,5 @@
+step,removed,remaining
+Missing required numeric values,2120,128446
+"Price outside $101-$100,000",8987,119459
+"Odometer outside 1-400,000 miles",443,119016
+Model year outside 1900-2021,0,119016

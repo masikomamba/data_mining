@@ -1,0 +1,8 @@
+{
+  "source": "https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data",
+  "download_endpoint": "https://www.kaggle.com/api/v1/datasets/download/austinreese/craigslist-carstrucks-data",
+  "retrieved_date": "2026-10-16",
+  "archive_bytes": 275237598,
+  "csv_bytes": 1447955215,
+  "sha256": "54c60e20aa494a73f7f9170bff1e38b4800472b767cab8f9dab7da5dcc261a5c"
+}
