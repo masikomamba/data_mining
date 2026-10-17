@@ -1,7 +1,5 @@
 checkpoint1/data/*.csv
 checkpoint1/data/*.zip
 checkpoint1/craigslist_pickup_sedan_cleaned.csv
-checkpoint1/group_summary.csv
-checkpoint1/figures/*.png
 checkpoint1/.ipynb_checkpoints/
 __pycache__/

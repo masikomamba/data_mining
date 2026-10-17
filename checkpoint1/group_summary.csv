@@ -1,0 +1,3 @@
+type,listings,median_price,mean_mileage,median_mileage,median_age,before_cleaning,removed,removed_percent
+pickup,40481,27995.0,85517.18638373558,70559.0,6.0,43510,3029,6.961618018846242
+sedan,78535,10999.0,86098.36649901318,81675.0,7.0,87056,8521,9.78795258224591
