@@ -3,3 +3,7 @@ checkpoint1/data/*.zip
 checkpoint1/craigslist_pickup_sedan_cleaned.csv
 checkpoint1/.ipynb_checkpoints/
 __pycache__/
+checkpoint1/build/
+checkpoint1/*.aux
+checkpoint1/*.log
+checkpoint1/*.out
