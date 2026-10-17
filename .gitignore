@@ -7,3 +7,12 @@ checkpoint1/build/
 checkpoint1/*.aux
 checkpoint1/*.log
 checkpoint1/*.out
+checkpoint1/*.synctex.gz
+checkpoint1/*.fls
+checkpoint1/*.fdb_latexmk
+tasks/
+checkpoint1/build_report.py
+*.exe
+*.msi
+*.dll
+*.pyd
