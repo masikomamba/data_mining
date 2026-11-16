@@ -197,16 +197,26 @@ and front-wheel drive. Shading shows pointwise 95\% HC3 intervals for the mean.}
 
 \subsection*{Linear model diagnostics}
 
-The adjusted fit improved in-sample \(R^2\) from 0.517 to 0.647.
-Breusch--Pagan and Jarque--Bera tests gave \(p<0.0001\), consistent with
-unequal variance and a long residual tail. The design had full rank (52 columns),
+We used Breusch--Pagan to test whether residual variance was constant across
+the selected predictors. Jarque--Bera uses residual skewness and kurtosis to check
+normality, an assumption for exact classical \(t\) inference along with independent
+errors of constant variance. Both tests gave \(p<0.0001\). Their usual reference
+distributions rely on independence, so repeated listings warrant caution.
+
+HC3 allows unequal error variance and uses a large-sample approximation under
+independence across listings. As a sensitivity check, VIN-clustered inference allows
+errors to be correlated within known VINs and relies on independence across the
+inferred groups. The adjusted fit improved in-sample \(R^2\) from 0.517 to 0.647.
+The design had full rank (52 columns),
 with an interaction variance inflation factor of 3.89. Mean sedan residuals went
 from \negnum{\$2,025} at 80,000--100,000 miles to \posnum{\$4,047} at
 200,000--220,000 miles, consistent with the flattening seen in Checkpoint~1.
 
 \subsection*{The slope difference varies with mileage}
 
-The joint robust test for the three added quadratic terms gave
+The joint HC3 Wald test asks whether all three quadratic coefficients are zero
+together, the restriction that reduces the quadratic model to the linear one.
+Using the same large-sample assumptions as the HC3 slope tests, it gave
 \(\chi^2(3)=7{,}069.71\), \(p<0.0001\). Adjusted \(R^2\) increased from 0.646
 to 0.699. In the quadratic fit, the sedan curve flattens more
 sharply than the pickup curve. At 50,000 miles, the fitted pickup slope is
